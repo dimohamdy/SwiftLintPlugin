@@ -1,7 +1,7 @@
 # SwiftLintPlugin
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
-An Xcode plugin to enable/disable running SwiftLint [SwiftLint](https://github.com/realm/SwiftLint), and customizable by shell script.
+An Xcode plugin to enable/disable running [SwiftLint](https://github.com/realm/SwiftLint), and customizable by shell script.
 
 Many thanks to [ExtraBuildPhase](https://github.com/norio-nomura/ExtraBuildPhase) for the base code. This plugin just adds ability to enable/disable running the lint. If you don't want to run swiftLint with every build. Then, use this plugin.
 
