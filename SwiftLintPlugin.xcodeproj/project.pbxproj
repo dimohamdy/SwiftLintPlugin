@@ -12,6 +12,8 @@
 		543FA3081C64C5F000DF27C2 /* SwiftLintPlugin.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 543FA3071C64C5F000DF27C2 /* SwiftLintPlugin.xcscheme */; };
 		543FA30B1C64C5F000DF27C2 /* SwiftLintPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 543FA30A1C64C5F000DF27C2 /* SwiftLintPlugin.m */; };
 		543FA30E1C64C5F000DF27C2 /* NSObject_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 543FA30D1C64C5F000DF27C2 /* NSObject_Extension.m */; };
+		543FA3241C64DCB700DF27C2 /* SimplePersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 543FA3231C64DCB700DF27C2 /* SimplePersistence.m */; };
+		543FA3271C64DE2F00DF27C2 /* ExtraBuildPhase.m in Sources */ = {isa = PBXBuildFile; fileRef = 543FA3261C64DE2F00DF27C2 /* ExtraBuildPhase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,17 @@
 		543FA30C1C64C5F000DF27C2 /* NSObject_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_Extension.h; sourceTree = "<group>"; };
 		543FA30D1C64C5F000DF27C2 /* NSObject_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_Extension.m; sourceTree = "<group>"; };
 		543FA30F1C64C5F000DF27C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		543FA3191C64C8C200DF27C2 /* PBXBuildFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBXBuildFile.h; sourceTree = "<group>"; };
+		543FA31A1C64C8C200DF27C2 /* PBXBuildPhase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBXBuildPhase.h; sourceTree = "<group>"; };
+		543FA31B1C64C8C200DF27C2 /* PBXFileReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBXFileReference.h; sourceTree = "<group>"; };
+		543FA31C1C64C8C200DF27C2 /* PBXReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBXReference.h; sourceTree = "<group>"; };
+		543FA31D1C64C8C200DF27C2 /* PBXShellScriptBuildPhase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBXShellScriptBuildPhase.h; sourceTree = "<group>"; };
+		543FA31E1C64C8C200DF27C2 /* PBXSourcesBuildPhase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBXSourcesBuildPhase.h; sourceTree = "<group>"; };
+		543FA31F1C64C8C200DF27C2 /* PBXTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBXTarget.h; sourceTree = "<group>"; };
+		543FA3221C64DCB700DF27C2 /* SimplePersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePersistence.h; sourceTree = "<group>"; };
+		543FA3231C64DCB700DF27C2 /* SimplePersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePersistence.m; sourceTree = "<group>"; };
+		543FA3251C64DE2F00DF27C2 /* ExtraBuildPhase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtraBuildPhase.h; sourceTree = "<group>"; };
+		543FA3261C64DE2F00DF27C2 /* ExtraBuildPhase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtraBuildPhase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,10 +81,7 @@
 		543FA3051C64C5F000DF27C2 /* SwiftLintPlugin */ = {
 			isa = PBXGroup;
 			children = (
-				543FA3091C64C5F000DF27C2 /* SwiftLintPlugin.h */,
-				543FA30A1C64C5F000DF27C2 /* SwiftLintPlugin.m */,
-				543FA30C1C64C5F000DF27C2 /* NSObject_Extension.h */,
-				543FA30D1C64C5F000DF27C2 /* NSObject_Extension.m */,
+				543FA3151C64C86F00DF27C2 /* Classes */,
 				543FA30F1C64C5F000DF27C2 /* Info.plist */,
 				543FA3061C64C5F000DF27C2 /* Supporting Files */,
 			);
@@ -84,6 +94,60 @@
 				543FA3071C64C5F000DF27C2 /* SwiftLintPlugin.xcscheme */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		543FA3151C64C86F00DF27C2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				543FA3171C64C88100DF27C2 /* Plugin */,
+				543FA3181C64C8C200DF27C2 /* Xcode */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		543FA3171C64C88100DF27C2 /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				543FA3211C64C90A00DF27C2 /* BuildPhase */,
+				543FA3201C64C90300DF27C2 /* UI */,
+			);
+			name = Plugin;
+			sourceTree = "<group>";
+		};
+		543FA3181C64C8C200DF27C2 /* Xcode */ = {
+			isa = PBXGroup;
+			children = (
+				543FA3191C64C8C200DF27C2 /* PBXBuildFile.h */,
+				543FA31A1C64C8C200DF27C2 /* PBXBuildPhase.h */,
+				543FA31B1C64C8C200DF27C2 /* PBXFileReference.h */,
+				543FA31C1C64C8C200DF27C2 /* PBXReference.h */,
+				543FA31D1C64C8C200DF27C2 /* PBXShellScriptBuildPhase.h */,
+				543FA31E1C64C8C200DF27C2 /* PBXSourcesBuildPhase.h */,
+				543FA31F1C64C8C200DF27C2 /* PBXTarget.h */,
+			);
+			path = Xcode;
+			sourceTree = "<group>";
+		};
+		543FA3201C64C90300DF27C2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				543FA3091C64C5F000DF27C2 /* SwiftLintPlugin.h */,
+				543FA30A1C64C5F000DF27C2 /* SwiftLintPlugin.m */,
+				543FA30C1C64C5F000DF27C2 /* NSObject_Extension.h */,
+				543FA30D1C64C5F000DF27C2 /* NSObject_Extension.m */,
+				543FA3221C64DCB700DF27C2 /* SimplePersistence.h */,
+				543FA3231C64DCB700DF27C2 /* SimplePersistence.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		543FA3211C64C90A00DF27C2 /* BuildPhase */ = {
+			isa = PBXGroup;
+			children = (
+				543FA3251C64DE2F00DF27C2 /* ExtraBuildPhase.h */,
+				543FA3261C64DE2F00DF27C2 /* ExtraBuildPhase.m */,
+			);
+			name = BuildPhase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +218,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				543FA30B1C64C5F000DF27C2 /* SwiftLintPlugin.m in Sources */,
+				543FA3271C64DE2F00DF27C2 /* ExtraBuildPhase.m in Sources */,
 				543FA30E1C64C5F000DF27C2 /* NSObject_Extension.m in Sources */,
+				543FA3241C64DCB700DF27C2 /* SimplePersistence.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
