@@ -21,6 +21,12 @@ Many thanks to [ExtraBuildPhase](https://github.com/norio-nomura/ExtraBuildPhase
 
 Restart Xcode after installing
 
+## Usage
+
+1. Enable SwiftLint from Product -> SwiftLint.
+2. Build the project.
+3. You can then Disable SwiftLint from Product -> SwiftLint, then build again.
+
 ## Configuration
 ```sh
 # Change shell script
