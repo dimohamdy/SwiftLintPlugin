@@ -56,14 +56,14 @@
     NSMenuItem *productMenuItem = [[NSApp mainMenu] itemWithTitle:@"Product"];
     if (productMenuItem) {
         // Run swift lint item
-        NSMenuItem *runEverywhereMenuItem = [[NSMenuItem alloc] initWithTitle:@"SwiftLint" action:@selector(toggleSwiftLint:) keyEquivalent:@""];
-        [runEverywhereMenuItem setAlternate:NO];
-        [runEverywhereMenuItem setTarget:self];
-        [runEverywhereMenuItem setState:self.persistence.swiftLintEnabled ? NSOnState : NSOffState];
+        NSMenuItem *swiftLintEnabled = [[NSMenuItem alloc] initWithTitle:@"SwiftLint" action:@selector(toggleSwiftLint:) keyEquivalent:@""];
+        [swiftLintEnabled setAlternate:NO];
+        [swiftLintEnabled setTarget:self];
+        [swiftLintEnabled setState:self.persistence.swiftLintEnabled ? NSOnState : NSOffState];
 
         // Add it to the product menu
         NSInteger runMenuItemIndex = [[productMenuItem submenu] indexOfItemWithTitle:@"Run"];
-        [[productMenuItem submenu] insertItem:runEverywhereMenuItem atIndex:runMenuItemIndex + 2]; // Deal with hidden alternate "Run..." menu item.
+        [[productMenuItem submenu] insertItem:swiftLintEnabled atIndex:runMenuItemIndex + 2]; // Deal with hidden alternate "Run..." menu item.
     }
 }
 

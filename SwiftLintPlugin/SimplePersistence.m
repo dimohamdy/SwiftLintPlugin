@@ -40,5 +40,15 @@
     [self.userDefaults synchronize];
 }
 
+- (BOOL)useConfigurationFile
+{
+    return [self.userDefaults boolForKey:NSStringFromSelector(@selector(useConfigurationFile))];
+}
+
+- (void)setUseConfigurationFile:(BOOL)useConfigurationFile
+{
+    [self.userDefaults setObject:@(useConfigurationFile) forKey:NSStringFromSelector(@selector(useConfigurationFile))];
+    [self.userDefaults synchronize];
+}
 
 @end

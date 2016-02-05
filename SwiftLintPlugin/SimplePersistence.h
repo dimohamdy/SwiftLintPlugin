@@ -12,4 +12,6 @@
 
 @property (nonatomic) BOOL swiftLintEnabled;
 
+@property (nonatomic) BOOL useConfigurationFile;
+
 @end
