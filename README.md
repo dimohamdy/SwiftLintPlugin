@@ -11,11 +11,8 @@ Many things to [ExtraBuildPhase](https://github.com/norio-nomura/ExtraBuildPhase
 
 ## Installation
 
-Xcode Plug-ins Locations are the following:
-- Local System: `/Library/Application Support/Developer/Shared/Xcode/Plug-ins`
-- User Home: `~/Library/Application Support/Developer/Shared/Xcode/Plug-ins`
-
 ### Using Installers
+- [Alcatraz](http://alcatraz.io) (Comming soon)
 
 ### Build By Yourself
 1. Building the project with Xcode will install the plugin. (to User Home)
